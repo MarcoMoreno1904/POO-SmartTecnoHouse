@@ -13,7 +13,6 @@ public abstract class Actuador implements IDispositivo {
         this.estadoActual = estadosPosibles[0]; // Estado inicial por defecto
     }
 
-    // Implementación de los métodos de la interfaz
     @Override
     public String getID() {
         return id;
@@ -27,7 +26,6 @@ public abstract class Actuador implements IDispositivo {
         return estadoActual;
     }
 
-    // Lógica
     public boolean cambiarEstado(String nuevoEstado) {
         for (String estado : estadosPosibles) {
             if (estado.equals(nuevoEstado)) {

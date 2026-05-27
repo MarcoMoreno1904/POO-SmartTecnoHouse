@@ -19,7 +19,6 @@ public abstract class Sensor implements IDispositivo {
         this.estado = false;
     }
 
-    // Implementación de los métodos de la interfaz
     @Override
     public String getID() {
         return id;
@@ -36,7 +35,6 @@ public abstract class Sensor implements IDispositivo {
         return "Inactivo";
     }
 
-    // Lógica
     public boolean actualizarValor(double nuevoValor) {
         if (nuevoValor >= mínimo && nuevoValor <= máximo) {
             valorActual = nuevoValor;
