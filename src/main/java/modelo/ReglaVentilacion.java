@@ -8,9 +8,9 @@ public class ReglaVentilacion implements IRegla {
         Sensor sensorTemp = null;
         Sensor sensorPir = null;
 
-        for (Sensor sensorT : sensores) {
-            if (sensorT.getID().equals("temp")) sensorTemp = sensorT;
-            if (sensorT.getID().equals("pir")) sensorPir = sensorT;
+        for (Sensor sensor : sensores) {
+            if (sensor.getID().equals("temp")) sensorTemp = sensor;
+            if (sensor.getID().equals("pir")) sensorPir = sensor;
         }
         
         if (sensorTemp != null && sensorPir != null) {
