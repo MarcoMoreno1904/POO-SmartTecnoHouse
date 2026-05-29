@@ -1,0 +1,8 @@
+{
+  "Reading": [
+    {"timestamp": "2025-08-04T12:00:00Z", "sensor_id": "temp", "type": "temperature", "value": 22, "unit": "C"},
+    {"timestamp": "2025-08-04T12:00:00Z", "sensor_id": "light", "type": "light", "value": 800, "unit": "lux"},
+    {"timestamp": "2025-08-04T12:00:00Z", "sensor_id": "pir", "type": "presence", "value": 1, "unit": "boolean"},
+    {"timestamp": "2025-08-04T12:00:00Z", "sensor_id": "hum", "type": "humidity", "value": 45, "unit": "%"}
+  ]
+}

@@ -30,7 +30,7 @@ public abstract class Sensor implements IDispositivo {
     @Override
     public String getEstadoActual() {
         if (estado) {
-            return valorActual + unidad;
+            return valorActual + "" + unidad;
         }
         return "Inactivo";
     }
