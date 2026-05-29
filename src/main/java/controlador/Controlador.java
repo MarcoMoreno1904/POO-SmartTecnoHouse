@@ -72,6 +72,11 @@ public class Controlador implements ActionListener {
             }
 
             modelo.ejecutarReglas();
+
+            for (Actuador a : modelo.getActuadores()) {
+                modelo.getLogger().registrarAccion(a.getNombre(), a.getEstadoActual(), "RULE");
+                }
+                
             refrescarVista();
             vista.agregarLog(timestamp() + " Lecturas cargadas correctamente.");
 
@@ -121,6 +126,7 @@ private String extraerValorNumerico(String bloque, String campo) {
             boolean exito = actuador.cambiarEstado(nuevoEstado);
             if (exito) {
                 vista.actualizarActuador(indice, nuevoEstado);
+                modelo.getLogger().registrarAccion(actuador.getNombre(), nuevoEstado, "MANUAL");
                 vista.agregarLog(timestamp() + " " + actuador.getNombre() 
                     + " -> " + nuevoEstado + " (MANUAL)");
             } else {

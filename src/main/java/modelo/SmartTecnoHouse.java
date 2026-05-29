@@ -6,6 +6,7 @@ public class SmartTecnoHouse {
     private List<Sensor> sensores = new ArrayList<>();
     private List<Actuador> actuadores = new ArrayList<>();
     private List<IRegla> reglas = new ArrayList<>();
+    private Logger logger = new Logger();
 
     public SmartTecnoHouse(){
         sensores.add(new SensorTemperatura());
@@ -21,6 +22,8 @@ public class SmartTecnoHouse {
         reglas.add(new ReglaVentilacion());
         reglas.add(new ReglaIluminacion());
         reglas.add(new ReglaCerradura());
+
+        logger.inicializarLog();
     }
 
     public void ejecutarReglas(){
@@ -53,5 +56,9 @@ public class SmartTecnoHouse {
             }
         }
         return null;
+    }
+
+    public Logger getLogger() {
+        return logger;
     }
 }
