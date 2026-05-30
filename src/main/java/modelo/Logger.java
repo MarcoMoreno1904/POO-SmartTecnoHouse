@@ -5,6 +5,12 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Servicio de registro de acciones del sistema domótico.
+ * Escribe en el archivo actuadores.log cada cambio de estado de los actuadores.
+ * @author Marco Antonio Moreno Rodríguez
+ */
+
 public class Logger {
 
     private static final String RUTA_LOG = "actuadores.log";

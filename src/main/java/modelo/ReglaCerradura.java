@@ -1,6 +1,12 @@
 package modelo;
 import java.util.List;
 
+/**
+ * Regla que gestiona el bloqueo automático de la cerradura según la presencia.
+ * Bloquea cuando no hay nadie en casa y desbloquea cuando hay presencia.
+ * @author Marco Antonio Moreno Rodríguez
+ */
+
 public class ReglaCerradura implements IRegla {
 
     @Override

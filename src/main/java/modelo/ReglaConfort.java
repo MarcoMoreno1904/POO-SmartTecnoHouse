@@ -1,6 +1,12 @@
 package modelo;
 import java.util.List;
 
+/**
+ * Regla que apaga todos los dispositivos cuando hay confort o la casa está vacía.
+ * Condición: temperatura entre 20-25°C y luz mayor de 700 lux, o ausencia de presencia.
+ * @author Marco Antonio Moreno Rodríguez
+ */
+
 public class ReglaConfort implements IRegla {
 
     @Override

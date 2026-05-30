@@ -1,6 +1,12 @@
 package modelo;
 import java.util.List;
 
+/**
+ * Regla que activa el ventilador al máximo cuando hace calor y hay presencia.
+ * Condición: temperatura mayor de 28°C y sensor de presencia activo.
+ * @author Marco Antonio Moreno Rodríguez
+ */
+
 public class ReglaVentilacion implements IRegla {
 
     @Override

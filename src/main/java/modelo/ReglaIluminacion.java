@@ -1,6 +1,12 @@
 package modelo;
 import java.util.List;
 
+/**
+ * Regla que enciende la bombilla automáticamente cuando hay poca luz y presencia.
+ * Condición: luz menor de 300 lux y sensor de presencia activo.
+ * @author Marco Antonio Moreno Rodríguez
+ */
+
 public class ReglaIluminacion implements IRegla{
 
     @Override
